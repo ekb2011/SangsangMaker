@@ -1,0 +1,18 @@
+---
+declared-services:
+  my-conversation-service:
+    label: conversation
+    plan: free
+
+
+applications:
+- name: AIBRIL_COMPLETE
+  command: npm start
+  path: .
+  memory: 256M
+  instances: 1
+  services:
+  - Conversation-ekb
+  - ekb2011-cloudantNoSQLDB
+  env:
+    NPM_CONFIG_PRODUCTION: false

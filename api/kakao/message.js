@@ -147,8 +147,8 @@ let postMessage = (req, res) => {
 		url: "",
         method: 'GET',
         auth: {
-            'user': '8eb1dd46-d7f1-44e1-a209-f4907993e742',
-            'pass': 'EW5visw4WWUc'
+            'user': '',
+            'pass': ''
         }
 	  };
 	  var new_url=""

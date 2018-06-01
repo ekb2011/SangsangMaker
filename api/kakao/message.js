@@ -14,8 +14,8 @@ var options = {
     url: "https://gateway.aibril-watson.kr/visual-recognition/api"+'/v3/classify?url=http://cfile24.uf.tistory.com/image/245A80485254E350180F5A&version=2016-05-17',
         method: 'GET',
         auth: {
-            'user': '8eb1dd46-d7f1-44e1-a209-f4907993e742',
-            'pass': 'EW5visw4WWUc'
+            'user': '',
+            'pass': ''
         }
 };
 /*
@@ -25,8 +25,8 @@ classify_wp_wrequest_url : function(vr){
           url: "https://gateway.aibril-watson.kr/visual-recognition/api"+'/v3/classify?url=http://cfile24.uf.tistory.com/image/245A80485254E350180F5A&version=2016-05-17',
           method: 'GET',
           auth: {
-              'user': 8eb1dd46-d7f1-44e1-a209-f4907993e742,
-              'pass': EW5visw4WWUc
+              'user': ,
+              'pass': 
           }
       };
       function callback(error, response, body) {
@@ -42,8 +42,8 @@ classify_wp_wrequest_url : function(vr){
 /*
 var vr = {
      "url": "https://gateway.aibril-watson.kr/visual-recognition/api",
-     "username": "8eb1dd46-d7f1-44e1-a209-f4907993e742",
-     "password": "EW5visw4WWUc"
+     "username": "",
+     "password": ""
 };*/
 let postMessage = (req, res) => {
   res.setHeader('Content-Type', 'application/json; charset=utf-8');
@@ -103,7 +103,7 @@ let postMessage = (req, res) => {
     // 처음 대화인 경우 context가 없습니다. 이러한 경우 context 없이 conversation api를 호출합니다.
     var request=require('request');
     var options={
-      url: "https://def6d9d4-5f33-45f5-a919-3a337c64e8fa-bluemix:7f17624a1dabf62aa54d13ea600ae150ce2c8d1123d70f88e651f62af3e129f7@def6d9d4-5f33-45f5-a919-3a337c64e8fa-bluemix.cloudant.com/test/281b3688b2739b7af544c19903281f09",
+      url: "",
       method:'GET'
     };
 
@@ -151,7 +151,7 @@ let postMessage = (req, res) => {
             'pass': 'EW5visw4WWUc'
         }
 	  };
-	  var new_url="https://gateway.aibril-watson.kr/visual-recognition/api/v3/classify?url="+"http://cfile24.uf.tistory.com/image/245A80485254E350180F5A&version=2016-05-17"
+	  var new_url=""
       options.url=new_url;
 
 	  function callback(error, response, body) {
@@ -173,11 +173,11 @@ let postMessage = (req, res) => {
 	  request(options, callback);
 	  
 	  options = {
-          url: "https://gateway.aibril-watson.kr/visual-recognition/api"+'/v3/classify?url=http://cfile24.uf.tistory.com/image/245A80485254E350180F5A&version=2016-05-17',
+          url: '',
           method: 'GET',
           auth: {
-              'user': '8eb1dd46-d7f1-44e1-a209-f4907993e742',
-              'pass': 'EW5visw4WWUc'
+              'user': '',
+              'pass': ''
           }
       };
       function callback(error, response, body) {
@@ -199,8 +199,8 @@ let postMessage = (req, res) => {
 		url : 'https://gateway.aibril-watson.kr/visual-recognition/api/v3/classify?version=2016-05-17',
 		method: 'POST',
 		auth: {
-			'user': '8eb1dd46-d7f1-44e1-a209-f4907993e742',
-			'pass': 'EW5visw4WWUc'
+			'user': '',
+			'pass': ''
 		},
 		formData : {
 			images_file: {
